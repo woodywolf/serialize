@@ -18,14 +18,3 @@ class SerializeJSON implements SerializerInterface
 }
 
 
-class Data
-{
-    public $name;
-    public $email;
-}
-
-
-$info=new \Data;
-$info->name="Ender";
-$info->email="@mail.com";
-SerializeJSON($info);

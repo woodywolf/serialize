@@ -1,0 +1,21 @@
+{
+    "name": "woodywolf/serialize",
+    "description": "''",
+    "type": "library",
+    "require": {
+        "ext-json": "^1.6",
+        "symfony/yaml": "^4.2"
+    },
+    "authors": [
+        {
+            "name": "Andrey Baranchuk",
+            "email": "oyasumi.pung.pung228@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}

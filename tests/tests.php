@@ -27,8 +27,8 @@ $y = ($Yaml->serialize($info));
 print_r($j);
 print_r($y);
 
-$junserialize = ($JSON->unserialize($info));
-$yunserialize = ($Yaml->unserialize($info));
+$junserialize = ($JSON->unserialize($j));
+$yunserialize = ($Yaml->unserialize($y));
 print_r($junserialize);
 print_r($yunserialize );
 

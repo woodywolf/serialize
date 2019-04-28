@@ -13,7 +13,7 @@ class SerializeJSON implements SerializerInterface
                 throw new \InvalidArgumentException("The argument must be an object");
             }
         }
-        catch (\Exception $ex) {
+        catch (\InvalidArgumentException $ex) {
             echo $ex->getMessage();
             exit();
         }

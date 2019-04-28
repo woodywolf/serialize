@@ -2,11 +2,11 @@
 This library can serialize php objects to JSON format and Yaml format 
 ## How to use
 1.Add your object to console.php  
-2.Add it to
+2.Write your object name into
 ```php
 $j = ($JSON->serialize($yourobject))
 ```
 or
 ```php
-$j = ($Yaml->serialize($yourobject))
+$y = ($Yaml->serialize($yourobject))
 ```

@@ -5,3 +5,4 @@ This library can serialize php objects to JSON format and Yaml format
 2.Add it to
 '$j = ($JSON->serialize())`
 
+`$ composer self-update` - обновление композера

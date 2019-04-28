@@ -1,30 +1,32 @@
 <?php
 
+
 namespace App;
+use Symfony\Component\Yaml\Yaml;
 
 
-class SerializeJSON implements SerializerInterface
+class SerializeYaml implements SerializerInterface
 {
 
     public function serialize($value)
     {
         try {
             if (gettype($value) != "object") {
-                throw new \InvalidArgumentException("The argument must be an object");
+                throw new \InvalidArgumentException("The argument is must be an object");
             }
         }
         catch (\Exception $ex) {
             echo $ex->getMessage();
             exit();
         }
-        return json_encode($value);
+
+        $arr =  (array) $value;
+        return Yaml::dump($arr);
 
     }
 
     public function unserialize($value)
     {
-        return json_decode($value,true);
+        return Yaml::parse($value);
     }
 }
-
-

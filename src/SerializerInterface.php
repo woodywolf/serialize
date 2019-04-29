@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace WoodyWolf\Serialize;
 
 
     interface SerializerInterface

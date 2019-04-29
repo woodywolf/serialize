@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App;
+namespace WoodyWolf\Serialize;
 use Symfony\Component\Yaml\Yaml;
 
 

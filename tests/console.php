@@ -1,13 +1,14 @@
 <?php
 require_once __DIR__ . '/../vendor/autoload.php';
 
-use App\SerializeJSON;
-use App\SerializeYaml;
+use WoodyWolf\Serialize\SerializeJSON;
+use WoodyWolf\Serialize\SerializeYaml;
 
 $JSON = new SerializeJSON;
 $Yaml = new SerializeYaml;
 
-$SerializedObject = $Yaml -> serialize($yourobject);
+
+$SerializedObject = $Yaml -> serialize($info);
 
 print_r($SerializedObject);
 

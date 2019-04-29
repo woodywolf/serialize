@@ -2,8 +2,8 @@
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-use App\SerializeJSON;
-use App\SerializeYaml;
+use WoodyWolf\Serialize\SerializeJSON;
+use WoodyWolf\Serialize\SerializeYaml;
 
 
 class Data

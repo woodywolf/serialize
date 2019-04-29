@@ -8,8 +8,12 @@ $JSON = new SerializeJSON;
 $Yaml = new SerializeYaml;
 
 
-$SerializedObject = $Yaml -> serialize($info);
 
-print_r($SerializedObject);
-
+try {
+    $SerializedObject = $Yaml->serialize($yourobject);
+    var_dump($SerializedObject);
+}
+catch (Exception $e){
+    echo "Exception:", $e->getMessage(), "\n";
+}
 

@@ -6,7 +6,7 @@ This library can serialize php objects to JSON format and Yaml format
 ```php
 $SerializedObject = $JSON -> serialize($yourobject);
 ```
-Add this if you need Yaml 
+Add this if you need Yaml: 
 ```php
 $SerializedObject = $Yaml -> serialize($yourobject);
 ```

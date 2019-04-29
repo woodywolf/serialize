@@ -7,8 +7,8 @@ use App\SerializeYaml;
 $JSON = new SerializeJSON;
 $Yaml = new SerializeYaml;
 
+$SerializedObject = $Yaml -> serialize($yourobject);
 
-$j = ($JSON->serialize());
-$y = ($Yaml->serialize());
-print_r($j);
-print_r($y);
+print_r($SerializedObject);
+
+

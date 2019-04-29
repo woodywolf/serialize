@@ -8,16 +8,12 @@ class SerializeJSON implements SerializerInterface
 
     public function serialize($value)
     {
-        try {
-            if (gettype($value) != "object") {
-                throw new \InvalidArgumentException("The argument must be an object");
-            }
-        }
-        catch (\InvalidArgumentException $ex) {
-            echo $ex->getMessage();
+        if (gettype($value) != "object") {
+            echo "The argument must be an object";
             exit();
         }
-        return json_encode($value);
+        else
+            return json_encode($value);
 
     }
 

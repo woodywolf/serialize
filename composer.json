@@ -1,6 +1,6 @@
 {
     "name": "woodywolf/serialize",
-    "description": "''",
+    "description": "This library can serialize php objects to JSON format and Yaml format",
     "type": "library",
     "require": {
         "ext-json": "^1.6",

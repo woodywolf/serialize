@@ -10,18 +10,13 @@ class SerializeYaml implements SerializerInterface
 
     public function serialize($value)
     {
-        try {
-            if (gettype($value) != "object") {
-                throw new \InvalidArgumentException("The argument is must be an object");
-            }
-        }
-        catch (\InvalidArgumentException $ex) {
-            echo $ex->getMessage();
+        if (gettype($value) != "object") {
+            echo "The argument must be an object";
             exit();
         }
-
-        $arr =  (array) $value;
-        return Yaml::dump($arr);
+        else
+            $arr =  (array) $value;
+            return Yaml::dump($arr);
 
     }
 
